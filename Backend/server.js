@@ -6,6 +6,7 @@ import userRouter from "./routers/userRoute.js"
 import 'dotenv/config'
 import cartRouter from "./routers/cartRoute.js"
 import orderRouter from "./routers/orderRoute.js"
+
 //app config(initialize the app using express server)
 const app = express()
 //const port = process.env.PORT || 4001;
@@ -24,6 +25,9 @@ app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
+//const paymentRoutes = require("./routes/payments");
+//app.use("/api/payments", paymentRoutes);
+
 
 app.get("/",(req,res)=>{
     res.send("API Working")
