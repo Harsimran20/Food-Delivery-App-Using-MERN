@@ -1,8 +1,10 @@
-import express from "express"
-import authMiddleware from "../middleware/auth.js"
-import { placeOrder, verifyPayment } from "../controllers/orderControllers.js"
- const orderRouter = express.Router();
- orderRouter.post("/place",authMiddleware,placeOrder);
- orderRouter.post("/verify",verifyPayment);
+import express from "express";
+import { placeOrder } from "../controllers/orderControllers.js";
 
- export default orderRouter;
+const router = express.Router();
+
+// Route to place an order without payment
+router.post("/place-order", placeOrder);
+
+export default router;
+

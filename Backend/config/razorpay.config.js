@@ -7,3 +7,4 @@ const createRazorpayInstance=()=>{
         key_secret: process.env.TP7vk1vusHQzNq6nJgGYyTrU
     });
 }
+module.exports = razorpay;

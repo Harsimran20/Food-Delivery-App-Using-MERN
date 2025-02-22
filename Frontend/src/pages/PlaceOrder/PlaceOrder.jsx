@@ -2,11 +2,11 @@ import './PlaceOrder.css';
 import { useContext, useState } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
-
+import {useNavigate} from 'react-router-dom';
 const PlaceOrder = () => {
   // Correctly retrieve getTotalCartAmount from StoreContext
   const { getTotalCartAmount,token,food_list,cartItems,url } = useContext(StoreContext);
- 
+  const navigate = useNavigate();
   const [data,setData] = useState({
     firstName: "",
     lastName : "",
@@ -90,7 +90,7 @@ const PlaceOrder = () => {
                 <b>${getTotalCartAmount() + 2}</b>
               </div>
             </div>
-            <button type='submit'>PROCEED TO PAYMENT</button>
+            <button onClick={()=>navigate('/OrderDetails')} type='submit'>PLACE ORDER</button>
           </div>
         </div>
       </div>
