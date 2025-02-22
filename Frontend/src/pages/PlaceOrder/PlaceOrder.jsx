@@ -90,7 +90,7 @@ const PlaceOrder = () => {
                 <b>${getTotalCartAmount() + 2}</b>
               </div>
             </div>
-            <button onClick={()=>navigate('/OrderDetails')} type='submit'>PLACE ORDER</button>
+            <button onClick={()=>navigate('/myorders')} type='submit'>PLACE ORDER</button>
           </div>
         </div>
       </div>
@@ -99,3 +99,4 @@ const PlaceOrder = () => {
 }
 
 export default PlaceOrder;
+
