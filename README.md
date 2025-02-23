@@ -9,7 +9,9 @@ Tomato is a full-stack web application designed for online food ordering, levera
 🍔 Frontend: https://food-delivery-app-using-mern-frontend1.onrender.com
 
 🚀 Features
+
 🛍 User Interface
+
 ✅ Browse and explore delicious food items
 
 ✅ Add to cart and checkout seamlessly
