@@ -1,6 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js"
-
+import mongoose from "mongoose";
 
 // placing user order from frontend
 const placeOrder = async (req,res) => {
@@ -74,15 +74,29 @@ const verifyOrder = async (req,res) => {
 
 // user orders for frontend
 
-const userOrders = async (req,res) => {
+const userOrders = async (req, res) => {
     try {
-        const orders = await orderModel.find({userId:req.body.userId});
-        res.json({success:true,data:orders})
+        const userId = req.user.id;
+        
+        // Ensure userId is treated as string
+        const userIdString = String(userId);
+        
+        console.log('Querying orders for userId:', userIdString);
+        
+        const orders = await orderModel.find({ userId: userIdString });
+        console.log('Found orders:', orders);
+        
+        res.json({ success: true, data: orders });
     } catch (error) {
-        console.log(error);
-        res.json({success:false,message:"Error"})
+        console.error('Error in userOrders:', error);
+        res.status(500).json({ 
+            success: false, 
+            message: "Error fetching orders",
+            error: error.message 
+        });
     }
-}
+};
+
 
 // Listing orders for admin panel
 const listOrders = async (req,res) => {
@@ -108,4 +122,5 @@ const updateStatus = async (req,res) => {
 
 
 export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus}
+
 
