@@ -1,10 +1,12 @@
-📌 Tomato - Online Food Ordering Application
+# Tomato - Online Food Ordering Application
 
 Tomato is a full-stack web application designed for online food ordering, leveraging the MERN stack to provide a seamless and intuitive user experience. The platform includes comprehensive features for both users and administrators, ensuring efficient food ordering and management.
 
 🔗 Live Demo
 🛠 Admin Panel: https://food-delivery-app-using-mern-admin.onrender.com
-🍔 Frontend: https://food-delivery-app-using-mern-frontend1.onrender.com/
+
+🍔 Frontend: https://food-delivery-app-using-mern-frontend1.onrender.com
+
 🚀 Features
 🛍 User Interface
 ✅ Browse and explore delicious food items
@@ -24,6 +26,7 @@ MongoDB	Database to store food items, users, and orders
 Express.js	Backend framework for routing & APIs
 React.js	Frontend framework for building UI
 Node.js	Server-side runtime for handling requests
+
 📸 Screenshots
 🎨 User Interface
 <img src="C:\Users\ACER\Desktop\FrontEnd.jpg" width="500" />
