@@ -30,9 +30,13 @@ Tomato is a full-stack web application designed for online food ordering, levera
 🏗 Tech Stack
 
 Technology	Description
+
 MongoDB	Database to store food items, users, and orders
+
 Express.js	Backend framework for routing & APIs
+
 React.js	Frontend framework for building UI
+
 Node.js	Server-side runtime for handling requests
 
 📸 Screenshots
