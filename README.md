@@ -44,7 +44,7 @@ Node.js	Server-side runtime for handling requests
 📸 Screenshots
 
 🎨 User Interface
-<img src="C:\Users\ACER\Desktop\FrontEnd.jpg" width="500" />
+<img src="assets\Screenshots\FrontEnd.jpg" width="500" />
 
 🛠 Admin Dashboard
-<img src="C:\Users\ACER\Desktop\Admin.jpg" width="500" />
+<img src="assets\Screenshots\Admin.jpg" width="500" />
